@@ -14,14 +14,16 @@ header {
     background-color: #2a607c;
     color: #ffffff;
 }
-
 h1 {
     display: inline-block;
     font-size: 48px;
+}
+
+h1 > span {
     color: #d9dcd6;
 }
 
-#nav-bar {
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -29,13 +31,14 @@ h1 {
     font-size: 20px;
 }
 
-#nav-bar-ul {
+nav ul {
     list-style-type: none;
 }
 
-.nav-bar-item {
+nav ul > li {
     display: inline-block;
     margin-left: 25px;
+    font-size:1.5vw;
 }
 
 a {
@@ -68,14 +71,15 @@ p {
 }
 
 #content {
-    width: 75%;
+    width: 73%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #benefits {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 2%;
+    padding: 2%;
     clear: both;
     float: right;
     width: 20%;
@@ -97,6 +101,7 @@ p {
 .benefit-subsection img {
     display: block;
     margin: 10px auto;
+    width:100%;
     max-width: 150px;
 }
 
@@ -116,6 +121,8 @@ p {
 
 .content-subsection img {
     max-height: 200px;
+    height: auto;
+    width: auto;
 }
 
 footer {
@@ -125,6 +132,6 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+h4 {
     font-size: 22px;
 }
