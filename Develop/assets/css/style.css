@@ -1,5 +1,7 @@
 /* Calculate size of elements in page and add padding, margin to border box default */
 * {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -8,58 +10,46 @@
 body {
     background-color: #d9dcd6;
 }
-/* Set header elements to flex and justify the content to space-around, so that they shrink with the page and have a bit of even space all around. */
+/* Set header elements to flex and justify the content to space-around, 
+so that they shrink with the page and have a bit of even space all around.
+Also set wrap to make sure when the page is small enough that the navlinks
+wrap under the logo. Additionally, set the vertical alignment of all contained
+elements to the center. */
 header {
     display: flex;
-    justify-content: space-around
-    ;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
 }
-/* Make the logo header size larger than usual header1 size*/
+/* Set the logo header size larger than usual header1 size */
 h1 {
-    font-size: 48px;
+    font-size: 3vw;
 }
-/* Give the middle letters "seo" a slightly different color for effect. */
+/* Set the logo letters "seo" to a slightly different shade for graphical effect. */
 h1 > span {
     color: #d9dcd6;
 }
-
-nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
+/* Make sure the items display in flex mode, so they dont wrap by default. Set justify-content to center it, and make the list-style none so that bullet-points don't appear */
 nav ul {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: space-between;
     list-style-type: none;
 }
-
+/* Add a small margin to the left to space out the items evenly. Set the list items' link font size */
 nav ul > li {
-    display: inline-block;
     margin-left: 25px;
-    font-size: 20px;
+    font-size: 2vw;
+    font-
 }
-
+/* Remove any decoration on link text, like underlines, etc. */
 a {
-    color: #ffffff;
     text-decoration: none;
 }
-
-p {
-    font-size: 16px;
-    size: 50%;
-}
-
+/* Add background image and properties, setting fixed height and keeping width to the full width of the page, adding a small margin at the bottom for a bit of space between itself and the main content. */
 #background {
     height: 800px;
     width: 100%;
@@ -68,6 +58,22 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+
+#content {
+    width: 73%;
+    margin-left: 2%;
+    margin-right: 2%;
+    order: 0;
+}
+
 
 .float-left {
     float: left;
@@ -79,27 +85,48 @@ p {
     margin-left: 25px;
 }
 
-#content {
-    width: 73%;
-    display: inline-block;
-    margin-left: 2%;
-    margin-right: 2%;
+p {
+    /* font-size: 16px; */
+    size: 50%;
 }
 
-#benefits {
+.content-subsection {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-subsection h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.content-subsection img {
+    max-height: 200px;
+    flex-shrink: 1;
+}
+
+aside {
     margin-right: 2%;
     padding: 2%;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    order: 1;
 }
 
 .benefit-subsection {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
 .benefit-subsection h3 {
@@ -114,30 +141,9 @@ p {
     max-width: 150px;
 }
 
-.content-subsection {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.content-subsection h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.content-subsection img {
-    max-height: 200px;
-    height: auto;
-    width: auto;
-}
-
 footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
@@ -145,8 +151,8 @@ h4 {
     font-size: 22px;
 }
 
-@media screen and (max-width = 630px) {
-    header {
-
+@media screen and (min-width: 1080px) {
+    nav ul > li{
+        font-size: 22;
     }
 }
