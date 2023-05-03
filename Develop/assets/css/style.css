@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 1vw;
 }
 /* Set the background color of the page */
 body {
@@ -17,7 +18,7 @@ wrap under the logo. Additionally, set the vertical alignment of all contained
 elements to the center. */
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
@@ -26,11 +27,12 @@ header {
 }
 /* Set the logo header size larger than usual header1 size */
 h1 {
-    font-size: 3vw;
+    font-size: 3em;
 }
 /* Set the logo letters "seo" to a slightly different shade for graphical effect. */
 h1 > span {
     color: #d9dcd6;
+    font-size: inherit;
 }
 /* Make sure the items display in flex mode, so they dont wrap by default. Set justify-content to center it, and make the list-style none so that bullet-points don't appear */
 nav ul {
@@ -38,16 +40,19 @@ nav ul {
     justify-content: center;
     align-items: space-between;
     list-style-type: none;
+
 }
 /* Add a small margin to the left to space out the items evenly. Set the list items' link font size */
 nav ul > li {
     margin-left: 25px;
-    font-size: 2vw;
-    font-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* Remove any decoration on link text, like underlines, etc. */
-a {
+nav a {
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
 }
 /* Add background image and properties, setting fixed height and keeping width to the full width of the page, adding a small margin at the bottom for a bit of space between itself and the main content. */
 #background {
