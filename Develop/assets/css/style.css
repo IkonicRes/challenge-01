@@ -2,13 +2,14 @@
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-size: 1vw;
 }
 /* Set the background color of the page */
 body {
+    min-height:100vh;
+    display:table;
     background-color: #d9dcd6;
 }
 /* Set header elements to flex and justify the content to space-around, 
@@ -17,17 +18,18 @@ Also set wrap to make sure when the page is small enough that the navlinks
 wrap under the logo. Additionally, set the vertical alignment of all contained
 elements to the center. */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
 }
-/* Set the logo header size larger than usual header1 size */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Set the logo header size to 3 times the rem(viewport width)*/
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 /* Set the logo letters "seo" to a slightly different shade for graphical effect. */
 h1 > span {
@@ -40,6 +42,7 @@ nav ul {
     justify-content: center;
     align-items: space-between;
     list-style-type: none;
+    padding-right: 30px;
 
 }
 /* Add a small margin to the left to space out the items evenly. Set the list items' link font size */
@@ -50,25 +53,22 @@ nav ul > li {
 /* Remove any decoration on link text, like underlines, etc. */
 nav a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     
 }
 /* Add background image and properties, setting fixed height and keeping width to the full width of the page, adding a small margin at the bottom for a bit of space between itself and the main content. */
 #background {
-    height: 800px;
-    width: 100%;
+    height: 40vw;
+    max-height: 600px;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 main{
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
 }
 
 
@@ -76,18 +76,6 @@ main{
     width: 73%;
     margin-left: 2%;
     margin-right: 2%;
-    order: 0;
-}
-
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
 }
 
 p {
@@ -96,27 +84,22 @@ p {
 }
 
 .content-subsection {
-    display: flex;
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    display:flex;
+    margin-bottom: 2%;
+    padding: 5%;
     background-color: #0072bb;
-
-}
-.content-text{
-    display: flex;
-    flex-direction: column;
 
 }
 
 .content-subsection h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: 2%;
+    font-size: 300%;
 }
 
 .content-subsection img {
-    max-height: 200px;
+    max-width: 35%;
     flex-shrink: 1;
+    flex-grow: 0;
 }
 
 aside {
@@ -131,22 +114,23 @@ aside {
 }
 
 .benefit-subsection {
-    margin-bottom: 32px;
+    margin-bottom: 3%;
 }
 
 .benefit-subsection h3 {
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     text-align: center;
 }
 
 .benefit-subsection img {
     display: block;
-    margin: 10px auto;
-    width:100%;
+    margin: 2% auto;
+    width:15vw;
     max-width: 150px;
 }
 
 footer {
+    display:table-footer-group;
     padding: 30px;
     clear: both;
     text-align: center;
@@ -154,6 +138,14 @@ footer {
 
 h4 {
     font-size: 22px;
+}
+
+.small-margin{ 
+    margin-left:2%; 
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
 }
 
 @media screen and (min-width: 1080px) {
