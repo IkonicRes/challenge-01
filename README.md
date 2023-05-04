@@ -36,4 +36,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Features
 
-This page should scale correctly to any width or height, and therefore should work on any device, be it tablet, smartphone or TV. It has nav-links at the top so you can jump to the different content sections, and an easy to look at neat layout with even spacing.
+This page should scale correctly to any width or height, and therefore should work on any device, be it tablet, smartphone or TV. It has nav-links at the top so you can jump to the different content sections, and an easy-to-look-at neatly spaced layout.
