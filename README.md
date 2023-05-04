@@ -19,7 +19,7 @@ The navigation bar on the top right contains navigation links that will jump to 
 
 ## Credits
 
-I was working on this with Quentin, Akon, and a couple other students in the study group. But mostly by myself in a cold dark corner. I used FireAlpaca to merge the two screenshots of the page into one for the readme. Much thanks to FlexZombies and w3schools.
+I was working on this with Quentin, Akon, and a couple other students in the study group. But mostly by myself in a cold dark corner. I used FireAlpaca to merge the two screenshots of the page into one for the readme. Much thanks to FlexZombies and w3schools.  
 License below was copied from a template here > [MIT license README template](https://gist.github.com/ckib16/8732561535ed766cd6b8)
 
 ## License
