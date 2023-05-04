@@ -102,6 +102,7 @@ main{
 }
 /* Set the middle content section to reverse flex direction */
 #online-rep-mgmt {
+    /* flex: inherit; */
     flex-direction: row-reverse;
 }
 /* Add a bit of padding around the second section's image on the right side equal to 3% of the viewport's width*/
