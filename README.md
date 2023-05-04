@@ -12,7 +12,7 @@ I built this page to teach people a bit more about digital marketing, and increa
 - [Features](#features)
 
 ## Usage
-Here is the link to the site for your browsing pleasure: [Horiseon Digital Website](https://ikonicres.github.io/horiseon-digital-website/)
+Here is the link to the site for your browsing pleasure: [Horiseon Digital Website](https://ikonicres.github.io/horiseon-digital-website/)  
 The navigation bar on the top right contains navigation links that will jump to each corresponding section when clicked. The layout should be responsive and scale to fit smaller screens like phones, tablets, and laptops, but should also scale well to fit 4k, 1080p, and 720p television sets. A preview of the page is shown below. 
 
 <p align="center"><img src="https://raw.githubusercontent.com/IkonicRes/horiseon-digital-website/main/assets/images/Horiseon-preview.png"></img></p>
