@@ -23,10 +23,9 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The navigation bar on the top right contains navigation links that will jump to each corresponding section when clicked. The layout should be responsive and scale to fit smaller screens like phones, tablets, and laptops, but should also scale well to fit 4k, 1080p, and 720p television sets. A preview of the page is shown below.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-<center><img src="./assets/images/Horiseon-preview.png"></img></center>
+<p align="center"><img src="./assets/images/Horiseon-preview.png"></img></p>
 
 ## Credits
 
