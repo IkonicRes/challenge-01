@@ -1,10 +1,8 @@
 # Horiseon Digital Marketing
 ## A simple page to browse Horiseon's digital marketing services.
 
-This page is a resource for those who 
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This page is a resource for those who would like to learn more about search engine optimization, online reputation management, and how to market with social media. 
+I built this page to teach people a bit more about digital marketing, and increasing visibility and traffic for their website. Anyone looking for further information about these subjects and how they can utilize them in their own website can find some of that information here. I learned a lot about css structure, good conventions and how to use flex to its potential.
 
 ## Table of Contents (Optional)
 

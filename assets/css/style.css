@@ -8,8 +8,8 @@
 }
 /* Set the min-height of the body content, style of display, and background color of the page */
 body {
-    min-height:100vh;
-    display:table;
+    min-height: 100vh;
+    display: table;
     background-color: #d9dcd6;
 }
 /* Set padding around header elements, font-family for the header, and background color. */
@@ -19,7 +19,7 @@ header {
     background-color: #2a607c;
 }
 /* Set nav to flex and center, with space between elements. */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,6 @@ nav ul {
     display: inherit;
     flex-direction: row;
     justify-self: center;
-    align-self: space-between;
     list-style-type: none;
     margin-right: 2vw;
 }
@@ -68,14 +67,14 @@ nav a {
     background-position: top;
 }
 /* Set flex on the entire "main" section, which contains all of the main content of the page. add a small margin to the left and right of the page to indent elements */
-main{
+main {
     display: flex;
     margin-left: 1.5%;
     margin-right: 1.5%;
 }
 /* Set the width of the content section to 80% of the page, and give a small space between content and benefits sections */
 #content {
-    width:80%;
+    width: 80%;
     margin-right: 1.5%;
 }
 /* Set the height of the content subsection to 15% the width of the page, and set flex properties on it. Add a margin to the bottom to space out the section backgrounds, and a bit of padding all around.*/
@@ -104,7 +103,7 @@ main{
     flex-direction: row-reverse;
 }
 /* Add a bit of padding around the second section's image on the right side equal to 3% of the viewport's width*/
-#online-rep-mgmt img{ 
+#online-rep-mgmt img {
      padding: 0 0 0 3vw;
 }
 /* Set header size to scale to 2.2x the html element's width, bold it a bit, and set the padding on the bottom to scale to 1% of the page's width */
@@ -136,18 +135,23 @@ h3 {
 }
 /* Set the aside image's height to 60% of its container*/
 .benefit-subsection img { 
-    height:60%;
+    height: 60%;
 }
-/* set all content text to 0.8x the html element's font size */
+/* Set all content text to 0.8x the html element's font size */
 p {
-    font-size:.8rem;
+    font-size: .8rem;
 }
 /* Give the footer a margin on top to space it out, and center the contained text */
 footer {
-    margin-top: 75px;
-    text-align: center;
+    margin-top: 1vw;
+    text-align: center;   
 }
-/* set the header4 to 1x the html elements font size */
+/* Set the footer text to black */
+footer > p {
+    color: black;
+}
+/* Set the header4 to 1x the html elements font size, and set the font color to black */
 h4 {
+    color: black;
     font-size: 1rem;
 }
