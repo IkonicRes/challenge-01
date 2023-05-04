@@ -6,44 +6,46 @@
     margin: 0;
     font-size: 1.5vw;
 }
-/* Set the background color of the page */
+/* Set the min-height of the body content, style of display, and background color of the page */
 body {
     min-height:100vh;
     display:table;
     background-color: #d9dcd6;
 }
-/* Set header elements to flex and justify the content to space-around, 
-so that they shrink with the page and have a bit of even space all around.
-Also set wrap to make sure when the page is small enough that the navlinks
-wrap under the logo. Additionally, set the vertical alignment of all contained
-elements to the center. */
+/* Set padding around header elements, font-family for the header, and background color. */
 header {
     padding: 1vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
 }
+/* Set nav to flex and center, with space between elements. */
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-/* Set the logo header size to 3 times the rem(viewport width)*/
+/* Set the logo header size to 3 times the rem(viewport width) and give it a slight left
+margin to bring logo into better view. Set font size to 3 times the hmtl elements size*/
 h1 {
     margin-left: 2vw;
     font-size: 3rem;
 }
-/* Set the logo letters "seo" to a slightly different shade for graphical effect. */
+/* Set the logo letters "seo" to a slightly different shade for graphical effect. Inherit
+font size so it doesnt look odd against the rest of the logo*/
 h1 > span {
     color: #d9dcd6;
     font-size: inherit;
 }
-/* Make sure the items display in flex mode, so they dont wrap by default. Set justify-content to center it, and make the list-style none so that bullet-points don't appear */
+/* Make sure the items inherit flex mode, and set the justify and align so that its centered with space in between elements.
+Set justify-content to center it, and make the list-style none so that bullet-points don't appear, then add
+a small margin to bring the nav-list into better view */
 nav ul {
     display: inherit;
+    flex-direction: row;
     justify-self: center;
     align-self: space-between;
     list-style-type: none;
-    padding-right: 2vw;
+    margin-right: 2vw;
 
 }
 /* Add a small margin to the left to space out the items evenly. Set the list items' link font size */
@@ -51,14 +53,13 @@ nav ul > li {
     margin-left: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/* Remove any decoration on link text, like underlines, etc. */
+/* Remove any decoration on link text, like underlines, etc. and set the font size to 1.2x the html element. Bold it a bit with font-weight set at 500 */
 nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
-    
 }
-/* Add background image and properties, setting fixed height and keeping width to the full width of the page, adding a small margin at the bottom for a bit of space between itself and the main content. */
+/* Add background image and properties, setting height to 60 percent of the viewport width, with a max height of 800px, adding a small margin at the bottom for a bit of space between itself and the main content. Setting background position to top ensures it does not get covered by the header */
 #background {
     height: 60vw;
     max-height: 800px;
@@ -67,37 +68,40 @@ nav a {
     background-size: cover;
     background-position: top;
 }
-
+/* Set flex on the entire "main" section, which contains all of the main content of the page. add a small margin to the left and right of the page to indent elements */
 main{
     display: flex;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 }
-
 
 #content {
-    width:70%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width:80%;
+    margin-right: 1.5%;
 }
 
-
-
 .content-subsection {
-    height: 20vw;
+    height: 15vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 2%;
     padding: 5%;
     background-color: #0072bb;
 
 }
 
+.content-subsection > section {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .content-subsection h2 {
     font-size: 2.2rem;
-    line-height: 93%;
 }
 
 .content-subsection img {
-    max-width: 45%;
+    max-width: 50%;
     flex-shrink: 1;
     flex-grow: 0;
 }
@@ -107,8 +111,8 @@ aside {
     flex-direction: column;
     justify-content: space-between;
     padding: 2%;
-    width: 30%;
-    margin-right:2%;
+    width: 20%;
+
     background-color: #2589bd;
 }
 
@@ -126,8 +130,7 @@ aside {
 .benefit-subsection img {
     display: block;
     margin:  0 auto; 
-    width:20vw;
-    max-width: 100px;
+    height:60%;
 }
 .benefit-subsection p {
     font-size:0.8rem;
@@ -144,8 +147,12 @@ h4 {
     font-size: 22px;
 }
 
-.small-margin{ 
-    margin-left:2%; 
+#online-rep-mgmt > section {
+    margin-right:4%;
+}
+
+.small-margin-left{ 
+    margin-left:4%; 
 }
 
 .flex-row-reverse {
