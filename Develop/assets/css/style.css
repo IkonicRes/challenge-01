@@ -56,13 +56,13 @@ nav ul > li {
 /* Remove any decoration on link text, like underlines, etc. and set the font size to 1.2x the html element. Bold it a bit with font-weight set at 500 */
 nav a {
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 /* Add background image and properties, setting height to 60 percent of the viewport width, with a max height of 800px, adding a small margin at the bottom for a bit of space between itself and the main content. Setting background position to top ensures it does not get covered by the header */
 #background {
     height: 60vw;
-    max-height: 800px;
+    max-height: 825px;
     margin-bottom: 2%;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
@@ -74,37 +74,47 @@ main{
     margin-left: 1.5%;
     margin-right: 1.5%;
 }
-
+/* Set the width of the content section to 80% of the page, and give a small space between content and benefits sections */
 #content {
     width:80%;
     margin-right: 1.5%;
 }
-
+/* Set the height of the content subsection to 15% the width of the page, and set flex properties on it. Add a margin to the bottom to space out the section backgrounds, and a bit of padding all around.*/
 .content-subsection {
-    height: 15vw;
+    height: 20vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 2%;
     padding: 5%;
     background-color: #0072bb;
-
 }
-
+/* Set all content besides image to inherit flex and set properties to run in an evenly spaced stretched column */
 .content-subsection > section {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: inherit;
+    flex-direction: column;    
 }
-
-.content-subsection h2 {
-    font-size: 2.2rem;
-}
-
+/* Set all content images to a max width of 45 percent of the parent container, set it not to grow any further than initial size, allow it to shrink, and set padding on the right to 3% of the page's width. */
 .content-subsection img {
-    max-width: 50%;
+    max-width: 45em;
     flex-shrink: 1;
     flex-grow: 0;
+    padding: 0 3vw 0 0;
 }
+/* Set the middle content section to reverse flex direction */
+#online-rep-mgmt {
+    flex-direction: row-reverse;
+}
+/* Add a bit of padding around the second section's image on the right side equal to 3% of the viewport's width*/
+#online-rep-mgmt img{ 
+     padding: 0 0 0 3vw;
+}
+/* Set header size to scale to 2.2x the html element's width, bold it a bit, and set the padding on the bottom to scale to 1% of the page's width */
+h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    padding-bottom: 1vw;
+}
+
 
 aside {
     display: flex;
@@ -132,35 +142,21 @@ aside {
     margin:  0 auto; 
     height:60%;
 }
-.benefit-subsection p {
-    font-size:0.8rem;
+
+p {
+    font-size:.8rem;
 }
 
 footer {
-    display:table-footer-group;
-    padding: 30px;
+    margin-top: 75px;
     clear: both;
     text-align: center;
 }
 
 h4 {
-    font-size: 22px;
+    font-size: 1rem;
 }
 
-#online-rep-mgmt > section {
-    margin-right:4%;
-}
 
-.small-margin-left{ 
-    margin-left:4%; 
-}
 
-.flex-row-reverse {
-    flex-direction: row-reverse;
-}
 
-@media screen and (min-width: 1080px) {
-    nav ul > li{
-        font-size: 22;
-    }
-}
