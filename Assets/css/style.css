@@ -36,7 +36,7 @@ h1 > span {
     color: #d9dcd6;
     font-size: inherit;
 }
-/* Make sure the items inherit flex mode, and set the justify and align so that its centered with space in between elements.
+/* Make sure the nav ul inherits flex mode, and set the justify and align so that its centered with space in between elements.
 Set justify-content to center it, and make the list-style none so that bullet-points don't appear, then add
 a small margin to bring the nav-list into better view */
 nav ul {
@@ -119,6 +119,7 @@ aside {
     flex-direction: column;
     justify-content: space-between;
     padding: 2%;
+    height: 81.25vw;
     width: 20%;
     background-color: #2589bd;
 }
