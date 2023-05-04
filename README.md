@@ -12,7 +12,7 @@ I built this page to teach people a bit more about digital marketing, and increa
 - [Features](#features)
 
 ## Usage
-
+Here is the link to the site for your browsing pleasure: [Horiseon Digital Website](https://ikonicres.github.io/horiseon-digital-website/)
 The navigation bar on the top right contains navigation links that will jump to each corresponding section when clicked. The layout should be responsive and scale to fit smaller screens like phones, tablets, and laptops, but should also scale well to fit 4k, 1080p, and 720p television sets. A preview of the page is shown below. 
 
 <p align="center"><img src="https://raw.githubusercontent.com/IkonicRes/horiseon-digital-website/main/assets/images/Horiseon-preview.png"></img></p>
@@ -20,12 +20,13 @@ The navigation bar on the top right contains navigation links that will jump to 
 ## Credits
 
 I was working on this with Quentin, Akon, and a couple other students in the study group. But mostly by myself in a cold dark corner. I used FireAlpaca to merge the two screenshots of the page into one for the readme. Much thanks to FlexZombies and w3schools.
+License below was copied from a template here > [MIT license README template](https://gist.github.com/ckib16/8732561535ed766cd6b8)
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Chris Kibble
+Copyright (c) 2023 Michael Ikonomou
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
