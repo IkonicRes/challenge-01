@@ -25,7 +25,7 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 The navigation bar on the top right contains navigation links that will jump to each corresponding section when clicked. The layout should be responsive and scale to fit smaller screens like phones, tablets, and laptops, but should also scale well to fit 4k, 1080p, and 720p television sets. A preview of the page is shown below.
 
-<p align="center"><img src="./assets/images/Horiseon-preview.png"></img></p>
+<p align="center"><img src="https://raw.githubusercontent.com/IkonicRes/horiseon-digital-website/main/Assets/images/Horiseon-preview.png"></img></p>
 
 ## Credits
 
