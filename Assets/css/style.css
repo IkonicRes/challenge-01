@@ -46,7 +46,6 @@ nav ul {
     align-self: space-between;
     list-style-type: none;
     margin-right: 2vw;
-
 }
 /* Add a small margin to the left to space out the items evenly. Set the list items' link font size */
 nav ul > li {
@@ -95,14 +94,13 @@ main{
 }
 /* Set all content images to a max width of 45 percent of the parent container, set it not to grow any further than initial size, allow it to shrink, and set padding on the right to 3% of the page's width. */
 .content-subsection img {
-    max-width: 45em;
+    max-width: 35em;
     flex-shrink: 1;
     flex-grow: 0;
     padding: 0 3vw 0 0;
 }
 /* Set the middle content section to reverse flex direction */
 #online-rep-mgmt {
-    /* flex: inherit; */
     flex-direction: row-reverse;
 }
 /* Add a bit of padding around the second section's image on the right side equal to 3% of the viewport's width*/
@@ -115,49 +113,40 @@ h2 {
     font-weight: 900;
     padding-bottom: 1vw;
 }
-
-
+/* Set the aside element to flex column, with space between the elements. Give it a padding of 2% and a width of 20% */
 aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2%;
     width: 20%;
-
     background-color: #2589bd;
 }
-
+/* Set the height of all benefit subsections to a quarter of the viewport width, make it inherit flex, change direction to column and set alignment to */
 .benefit-subsection {
     height: 25vw;
     display: inherit;
     flex-direction: column;
+    align-items: center;
 }
-
-.benefit-subsection h3 {
-    text-align: center;
+/* Keeps the font size for the header3 to 1.2x the html element's font size */
+h3 {
     font-size: 1.2em;
 }
-
-.benefit-subsection img {
-    display: block;
-    margin:  0 auto; 
+/* Set the aside image's height to 60% of its container*/
+.benefit-subsection img { 
     height:60%;
 }
-
+/* set all content text to 0.8x the html element's font size */
 p {
     font-size:.8rem;
 }
-
+/* Give the footer a margin on top to space it out, and center the contained text */
 footer {
     margin-top: 75px;
-    clear: both;
     text-align: center;
 }
-
+/* set the header4 to 1x the html elements font size */
 h4 {
     font-size: 1rem;
 }
-
-
-
-
